@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_menu {
+    display: flex;
+
+}
+
+.bar_nav {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 550px;
+    margin: 1px 2px;
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #455b71, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 550px;
+    margin: 1px 2px;
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #91a9c1, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #b2bcc6, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.cvphoto {
+    width: 25;
+    height: calc(550-330);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bar_nav_link {
+    width: 22;
+    height: calc(550-220);
+    overflow-y: auto;
+    margin: 2px;
+    font-size: 20px;
+}
+
+.photoeliezer {
+    border-radius: 50%;
+    margin: 5px 0 auto;
+    width: 35%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+    margin: auto;
+    padding: 0;
+    width: max-content;
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-size: 2vw;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.5vw;
+    font-style: italic;
+}
+
+.h5 {
+    font-size: 28px;
+    text-decoration: underline double blue;
+    margin-bottom: 15px;
+}
+
+hr {
+    height: 3px;
+    background: #080808;
+    border-color: #080808;
+}
+
+.nav_menu_item {
+    list-style: none;
+}
+
+.emailwhatsapp {
+    font-size: 1.8vw;
+    margin: 30px 50px;
+}
+
+.bars {
+    display: none;
+}
+
+.imgemail,
+.imgwhatsApp {
+    width: 4%;
+}
+
+.imgbars {
+    width: 70%;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+
+}
+
+.contactame {
+    font-size: 40px;
+    text-align: center;
+}
+
+.coverletter {
+    font-size: 26px;
+    text-align: justify;
+    margin: 25px 45px;
+}
+
+/*******COPY FROM HERE**********/
+/* -----RESET RULES––––––––––– */
+
+:root {
+    --lightgray: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    ;
+    --blue: steelblue;
+    --white: #fff;
+    --black: rgba(0, 0, 0, 0.3);
+    --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+/*optiones of menu*/
+
+/*for create windows modal*/
+.btn-group {
+    display: flex;
+
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    margin: 0.6em auto 0 auto;
+    font: 10px/1 sans-serif;
+}
+
+.open-modal {
+    font-weight: bold;
+    font-size: 0.9 rem;
+    color: var(--white);
+    padding: 0;
+    margin-bottom: 0;
+    border-radius: 5px;
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 blue;
+    border: #2c3e50 solid;
+    width: 80%;
+    cursor: pointer;
+}
+
+/*------modal------*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 900px;
+    max-height: 100vh;
+    border-radius: 5px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+}
+
+.modal-dialog>* {
+    padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+    background: var(--lightgray);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.modal-header .close-modal {
+    font-size: 1rem;
+}
+
+.modal p+p {
+    margin-top: 1rem;
+}
+
+
+.modal-content {
+    font-size: 1.2rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+.imgin {
+    width: 22%;
+}
+
+/*FOR MOVIL*/
+@media (max-width:1048px) {
+    .bar_nav_link {
+        display: none;
+    }
+
+    .bar_nav,
+    hr {
+        align-items: center;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .cvphoto {
+        width: 80%;
+        /* height:calc(550-330); */
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    hr {
+        height: 2px;
+        background-color: #888989;
+        border-color: #888989;
+        /* padding: 1px 0; */
+    }
+
+    .contactame {
+        font-size: 70px;
+        position: absolute;
+        top: 170px;
+        text-align: right;
+        /* right: 20px; */
+    }
+
+    .bars,
+    .whatsap,
+    .email {
+        display: inline;
+        margin-left: 30px;
+        font-size: 40px;
+        cursor: pointer;
+        z-index: 6;
+    }
+
+    .coverletter {
+        position: absolute;
+        top: 540px;
+
+        font-size: 40px;
+        text-align: justify;
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: #bdc3c7;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #455b71, #bdc3c7);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        overflow-y: auto;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    .h5 {
+        font-size: 50px;
+        text-decoration: underline double white;
+        margin-bottom: 20px;
+    }
+
+    .bar_nav_link {
+        display: inline;
+        position: absolute;
+        top: 540px;
+        left: 2.1%;
+        width: 95%;
+        height: 160%;
+        z-index: 4;
+        background: #bdc3c7;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #455b71, #bdc3c7);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .bar_nav_link_visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .btn-group {
+        width: 80%;
+        font: 20px/1.5 sans-serif;
+    }
+
+    .bar_nav_link {
+        font-size: 20px;
+    }
+
+    .open-modal {
+        font-size: 50px;
+        padding: 8px;
+        margin-bottom: 2px;
+        border-radius: 5px;
+        background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+        box-shadow: 0 0 20px 0 blue;
+        border: #2c3e50 solid;
+        width: 80%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .whatsap {
+        color: darkgreen;
+    }
+
+    .email {
+        color: blue;
+    }
+
+    .imgemail,
+    .imgwhatsApp {
+        width: 5%;
+    }
+
+    /*modal*/
+    .open-modal {
+        background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+        box-shadow: 0 0 20px 0 blue;
+        border: #2c3e50 solid;
+        width: 80%;
+        cursor: pointer;
+    }
+
+    .modal-dialog {
+        position: relative;
+        max-width: 900px;
+        max-height: 100vh;
+        border-radius: 5px;
+        background: var(--white);
+        overflow: auto;
+        cursor: default;
+    }
+}
